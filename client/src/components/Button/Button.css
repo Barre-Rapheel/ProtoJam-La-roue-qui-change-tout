@@ -5,11 +5,10 @@ body {
 }
 
 .button {
-   justify-content: center; 
-   align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .ttonContainer {
-    text-align: center;
-    
+  text-align: center;
 }
