@@ -2,12 +2,14 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./App.css";
 import Card from "./components/Card";
+import MySpinWheel from "./components/wheel";
 
 function App() {
   return (
     <>
       <Header />
       <main>
+        <MySpinWheel />
         <div className="card-container">
           <Card
             title="Bonne action du jour :"
