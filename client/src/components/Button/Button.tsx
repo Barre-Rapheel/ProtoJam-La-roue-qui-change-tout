@@ -1,10 +1,4 @@
-interface ButtonProps {
-  label: string;
-}
-
-
-
-function Button({ ButtonProps }: ButtonProps) {
+function Button() {
   const handleClick = () => {};
 
   return (
