@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -9,7 +15,34 @@
 }
 
 .main h2 {
-  font-size: 2rem;
-  color: #333;
+  font-family: var(--titleFont);
+  color: var(--red);
+  font-size: 2.5rem;
   margin: 0;
+}
+
+:root {
+  --titleFont: "Luckiest Guy";
+  --textFont: "Open sans", sans-serif;
+  --purple: #8667c1;
+  --pink: #ffc4c6;
+  --green: #d0f8c4;
+  --blue: #a5e3f4;
+  --lightPurple: #c9abf8;
+  --grey: #dbe2f4;
+  --yellow: #fddb00;
+  --red: #ff5300;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: center;
+  }
 }

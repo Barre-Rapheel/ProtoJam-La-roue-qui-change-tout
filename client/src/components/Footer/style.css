@@ -1,12 +1,13 @@
 footer {
-  background-color: #f8f9fa;
+  background-color: var(--grey);
+  color: var(--purple);
   padding: 1rem;
-  border-top: 1px solid #ddd;
   text-align: center;
+  font-family: var(--textFont);
 }
 
 footer p {
+  font-size: 1rem;
   margin: 0;
-  color: #555;
-  font-size: 0.9rem;
+  color: var(--purple);
 }
