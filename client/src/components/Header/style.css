@@ -33,7 +33,7 @@
 .header h1 {
   font-family: var(--titleFont);
   font-size: 2.5rem;
-  color: var(--purple);
+  color: var(--pink);
   text-align: center;
   transform: rotate(-10deg);
   margin-top: 2rem;
