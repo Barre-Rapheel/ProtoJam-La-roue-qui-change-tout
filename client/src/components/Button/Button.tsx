@@ -1,5 +1,7 @@
-function Button() {
-  const handleClick = () => {};
+function Button({ onButtonClick }: { onButtonClick: () => void }) {
+  const handleClick = () => {
+    onButtonClick();
+  };
 
   return (
     <button type="button" onClick={handleClick}>
