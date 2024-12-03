@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  padding: 1rem;
+  background-color: var(--lightPurple);
+}
+
+.nav-list {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  font-family: var(--textFont);
+  font-size: 1rem;
+  color: var(--purple);
+  text-decoration: none;
+  background-color: var(--yellow);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 2px solid var(--purple);
+  transition: all 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: var(--purple);
+  color: var(--yellow);
+}
+
+.header h1 {
+  font-family: var(--titleFont);
+  font-size: 2.5rem;
+  color: var(--pink);
+  text-align: center;
+  transform: rotate(-10deg);
+  margin-top: 2rem;
+}

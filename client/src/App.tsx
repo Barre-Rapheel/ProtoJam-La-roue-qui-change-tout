@@ -1,3 +1,5 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./App.css";
 import Card from "./components/Card";
 import MySpinWheel from "./components/wheel";
@@ -5,17 +7,21 @@ import MySpinWheel from "./components/wheel";
 function App() {
   return (
     <>
-      <MySpinWheel />
-      <div className="card-container">
-        <Card
-          title="Bonne action du jour :"
-          content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora architecto rerum eveniet nisi!"
-        />
-        <Card
-          title="Citation du jour :"
-          content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora architecto rerum eveniet nisi!"
-        />
-      </div>
+      <Header />
+      <main>
+        <MySpinWheel />
+        <div className="card-container">
+          <Card
+            title="Bonne action du jour :"
+            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora architecto rerum eveniet nisi!"
+          />
+          <Card
+            title="Citation du jour :"
+            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora architecto rerum eveniet nisi!"
+          />
+        </div>
+      </main>
+      <Footer />
     </>
   );
 }
