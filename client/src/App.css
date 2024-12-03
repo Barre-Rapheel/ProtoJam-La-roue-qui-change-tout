@@ -7,6 +7,14 @@
 :root {
   --titleFont: "Luckiest Guy";
   --textFont: "Open sans", sans-serif;
+  --purple: #8667C1;
+  --pink: #FFC4C6;
+  --green: #D0F8C4;
+  --blue : #A5E3F4;
+  --lightPurple: #C9ABF8;
+  --grey: #DBE2F4;
+  --yellow: #FDDB00;
+  --red: #FF5300;
 }
 
 .card-container {
