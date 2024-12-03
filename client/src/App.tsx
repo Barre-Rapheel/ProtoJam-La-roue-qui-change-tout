@@ -1,4 +1,5 @@
 import "./App.css";
+import MySpinWheel from "./components/wheel";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       </nav>
 
       <main className="text-box">
+        <MySpinWheel/>
         <hgroup className="block-primary">
           <h2 className="block-primary-main">JS Monorepo</h2>
           <p className="block-primary-sub">Votre framework JavaScript</p>
