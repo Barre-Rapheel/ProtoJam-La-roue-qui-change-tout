@@ -1,6 +1,6 @@
 function Button({ onButtonClick }: { onButtonClick: () => void }) {
   const handleClick = () => {
-    onButtonClick(); // Appelle la fonction passée depuis le parent
+    onButtonClick();
   };
 
   return (
