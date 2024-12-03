@@ -1,0 +1,24 @@
+.card {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  background-color: var(--purple);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 18rem;
+  height: 10rem;
+}
+
+.card-title {
+  font-family: var(--titleFont);
+  font-size: 1.2rem;
+  color: var(--pink);
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  font-family: var(--textFont);
+  font-size: 1rem;
+  color: var(--grey);
+}
