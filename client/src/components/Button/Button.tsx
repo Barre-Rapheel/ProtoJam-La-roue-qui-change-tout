@@ -1,4 +1,10 @@
-function Button() {
+interface ButtonProps {
+  label: string;
+}
+
+
+
+function Button({ ButtonProps }: ButtonProps) {
   const handleClick = () => {};
 
   return (
