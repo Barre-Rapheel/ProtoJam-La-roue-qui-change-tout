@@ -1,4 +1,4 @@
-export const quotesZenFetch = () => {
+export const goodActionsFetch = () => {
 	return fetch("http://localhost:3310/good_actions")
 		.then((response) => {
 			if (!response.ok) {
