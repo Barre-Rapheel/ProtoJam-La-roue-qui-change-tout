@@ -1,5 +1,6 @@
 import { Wheel } from 'react-custom-roulette';
 import { useState } from 'react';
+import Button from '../Button/Button';
 
 const MySpinWheel = () => {
   const [mustSpin, setMustSpin] = useState(false)
@@ -27,7 +28,7 @@ const MySpinWheel = () => {
       data={data}
       onStopSpinning={() => setMustSpin(false)}
     />
-    <button onClick={handleSpinClick}/>
+    <Button onClick={handleSpinClick}/>
     </>
   )
 }
