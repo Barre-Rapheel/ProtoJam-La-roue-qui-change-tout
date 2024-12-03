@@ -28,7 +28,7 @@ const MySpinWheel = () => {
       data={data}
       onStopSpinning={() => setMustSpin(false)}
     />
-    <Button onClick={handleSpinClick}/>
+    <Button onButtonClick ={handleSpinClick}/>
     </>
   )
 }
