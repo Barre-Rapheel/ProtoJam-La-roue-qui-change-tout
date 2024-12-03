@@ -5,7 +5,7 @@ import MySpinWheel from "./components/wheel";
 function App() {
   return (
     <>
-    <MySpinWheel />
+      <MySpinWheel />
       <div className="card-container">
         <Card
           title="Bonne action du jour :"
