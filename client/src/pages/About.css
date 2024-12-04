@@ -1,0 +1,24 @@
+.picture {
+  width: 100%;
+  text-align: center;
+  background-color: var(--lightPurple);
+}
+
+.title-about {
+  font-family: var(--titleFont);
+  padding: 1.5rem;
+  color: var(--blue);
+}
+
+section {
+  font-family: var(--textFont);
+  background-color: #fffef8;
+  color: var(--purple);
+  padding-bottom: 1rem;
+}
+
+section > p {
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
