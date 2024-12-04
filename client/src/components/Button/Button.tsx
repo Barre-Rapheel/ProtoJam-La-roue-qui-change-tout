@@ -1,13 +1,13 @@
 function Button({ onButtonClick }: { onButtonClick: () => void }) {
-	const handleClick = () => {
-		onButtonClick();
-	};
+  const handleClick = () => {
+    onButtonClick();
+  };
 
-	return (
-		<button type="button" onClick={handleClick}>
-			Click
-		</button>
-	);
+  return (
+    <button type="button" onClick={handleClick}>
+      Click
+    </button>
+  );
 }
 
 export default Button;
