@@ -1,9 +1,9 @@
-import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./App.css";
+import { useState } from "react";
 import Card from "./components/Card";
 import MySpinWheel from "./components/wheel";
-import { useState } from "react";
 import { goodActionsFetch } from "./services/Actions";
 import { quotesZenFetch } from "./services/QuotesFetch";
 
