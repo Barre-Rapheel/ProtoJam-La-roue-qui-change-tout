@@ -15,9 +15,9 @@ export default function Card({ title, content }: CardProps) {
     <article className="card">
       <h3 className="card-title">{title}</h3>
       {typeof content === "object" ? (
-        <blockquote>
+        <blockquote className="card-content">
           {content.q}
-          <cite>{content.a}</cite>
+          <cite className="card-content"> {content.a}</cite>
         </blockquote>
       ) : (
         <p className="card-content">{content}</p>
