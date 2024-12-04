@@ -4,11 +4,11 @@ body {
   justify-content: center;
 }
 
-.button {
+button {
   justify-content: center;
   align-items: center;
 }
 
-.ttonContainer {
+.buttonContainer {
   text-align: center;
 }

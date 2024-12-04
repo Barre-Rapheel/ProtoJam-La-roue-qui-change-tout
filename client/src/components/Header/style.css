@@ -1,0 +1,48 @@
+.header {
+  padding: 1rem;
+  background-color: var(--grey);
+  min-height: 11rem;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.5rem;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li a {
+  font-family: var(--titleFont);
+  font-size: 0.8rem;
+  color: var(--purple);
+  text-decoration: none;
+  background-color: var(--yellow);
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--purple);
+}
+
+.nav-list li a:hover {
+  background-color: var(--purple);
+  color: var(--yellow);
+}
+
+.header h1 {
+  font-family: var(--titleFont);
+  font-size: 2.5rem;
+  color: var(--purple);
+  text-align: center;
+  transform: rotate(-10deg);
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+}

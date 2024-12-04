@@ -1,7 +1,9 @@
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 import Card from "./components/Card";
 import MySpinWheel from "./components/wheel";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { goodActionsFetch } from "./services/Actions";
 import { quotesZenFetch } from "./services/QuotesFetch";
 
@@ -35,10 +37,12 @@ function App() {
 
 	return (
 		<>
+			<Header />
 			<MySpinWheel onSpinComplete={handleSpinComplete} />
 			<div className="card-container">
 				<Card title="Action du jour :" content={action} />
 				<Card title="Citation du jour :" content={quote} />
+				<Footer />
 			</div>
 		</>
 	);

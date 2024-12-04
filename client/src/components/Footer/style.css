@@ -1,0 +1,13 @@
+footer {
+  background-color: var(--grey);
+  color: var(--purple);
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--titleFont);
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--purple);
+}

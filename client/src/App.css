@@ -17,6 +17,18 @@
   --red: #ff5300;
 }
 
+main {
+  background-color: #fffef8;
+}
+
+.wheel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
