@@ -7,12 +7,12 @@ const MySpinWheel = () => {
   const [prizeNumber, setPrizeNumber] = useState(0);
 
   const data = [
-    { option: "Option 1" },
-    { option: "Option 2" },
-    { option: "Option 3" },
-    { option: "Option 4" },
-    { option: "Option 5" },
-    { option: "Option 6" },
+    { option: "🌱🌱🌱", style: { backgroundColor: "#FFC4C6" } },
+    { option: "⭐️⭐️⭐️", style: { backgroundColor: "#FF5300" } },
+    { option: "🧁🧁🧁", style: { backgroundColor: "#FDDB00" } },
+    { option: "❤️❤️❤️", style: { backgroundColor: "#D0F8C4" } },
+    { option: "🍭🍭🍭", style: { backgroundColor: "#C9ABF8" } },
+    { option: "☀️☀️☀️", style: { backgroundColor: "#A5E3F4" } },
   ];
 
   const handleSpinClick = () => {
@@ -22,12 +22,17 @@ const MySpinWheel = () => {
   };
   return (
     <>
-      <Wheel
-        mustStartSpinning={mustSpin}
-        prizeNumber={prizeNumber}
-        data={data}
-        onStopSpinning={() => setMustSpin(false)}
-      />
+      <div className="wheel">
+        <Wheel
+          mustStartSpinning={mustSpin}
+          prizeNumber={prizeNumber}
+          data={data}
+          onStopSpinning={() => setMustSpin(false)}
+          outerBorderColor="#260A37"
+          outerBorderWidth={2}
+          innerBorderColor="#260A37"
+        />
+      </div>
       <Button onButtonClick={handleSpinClick} />
     </>
   );
