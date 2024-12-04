@@ -14,11 +14,11 @@ function App() {
         </div>
         <div className="card-container">
           <Card
-            title="Bonne action du jour :"
+            title="Today's Good Deed :"
             content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora architecto rerum eveniet nisi!"
           />
           <Card
-            title="Citation du jour :"
+            title="Today's Inspiring Quote :"
             content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempora architecto rerum eveniet nisi!"
           />
         </div>

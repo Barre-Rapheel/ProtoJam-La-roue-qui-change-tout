@@ -1,13 +1,18 @@
 import "./style.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header">
-      <h1>La Roue Qui Change Tout !</h1>
+      <h1>
+        <Link className="link" to="/">
+          The Wheel of Change !{" "}
+        </Link>
+      </h1>
       <nav>
         <ul className="nav-list">
           <li>
-            <a href="/about">À propos</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
