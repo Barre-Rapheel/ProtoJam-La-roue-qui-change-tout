@@ -12,75 +12,75 @@ import app from "./app";
 // Get the port from the environment variables
 const port = process.env.APP_PORT;
 const good_actions = [
-	{ id: 1, action: "Faire un compliment à un inconnu." },
-	{ id: 2, action: "Envoyer un message de remerciement à un proche." },
-	{ id: 3, action: "Acheter un café pour un collègue ou un inconnu." },
+	{ id: 1, action: "Compliment someone." },
+	{ id: 2, action: "Send thanks to a relative." },
+	{ id: 3, action: "Buy a coffee for a colleague or a stranger" },
 	{
 		id: 4,
-		action: "Partager une ressource utile (un article, une vidéo inspirante).",
+		action: "Share a useful resource (an article, an inspiring video).",
 	},
-	{ id: 5, action: "Sourire à 5 personnes dans la journée." },
-	{ id: 6, action: "Planter une graine dans un pot ou un jardin." },
-	{ id: 7, action: "Offrir un repas à une personne sans-abri." },
-	{ id: 8, action: "Proposer de l'aide pour étudier à un(e) camarade." },
-	{ id: 9, action: "Rendre un objet trouvé à son propriétaire." },
-	{ id: 10, action: "Réparer ou recycler un objet au lieu de le jeter." },
-	{ id: 11, action: "Faire du bénévolat dans une maison de retraite." },
-	{ id: 12, action: "Aider un ami à déménager." },
+	{ id: 5, action: "Smile at 5 people during the day." },
+	{ id: 6, action: "Plant a seed in a pot or garden." },
+	{ id: 7, action: "Give a meal for a homeless person" },
+	{ id: 8, action: "Offer study help to a classmate." },
+	{ id: 9, action: "Give back a lost item to its owner." },
+	{
+		id: 10,
+		action: "Repair or recycle an item instead of throwing it away.",
+	},
+	{ id: 11, action: "Volunteer at a retirement home." },
+	{ id: 12, action: "Help a friend move house." },
 	{
 		id: 13,
-		action:
-			"Prendre des nouvelles d'un proche que l'on n'a pas vu depuis longtemps.",
+		action: "Check in on a loved one you haven't seen in a while.",
 	},
 	{
 		id: 14,
-		action: "Dire je t'aime a ses proches le plus souvent possible.",
+		action: "Tell your loved ones 'I love you' as often as possible.",
 	},
 	{
 		id: 15,
-		action: "Donner des fournitures scolaires à une école qui en manque.",
+		action: "Donate school supplies to a school in need.",
 	},
 	{
 		id: 16,
-		action: "Aider un collègue à s'intégrer dans un nouveau groupe de travail.",
+		action: "Help a colleague integrate into a new work group.",
 	},
 	{
 		id: 17,
-		action: "Prendre soin d'animaux errants ou adopter un animal de refuge.",
+		action: "Care for stray animals or adopt a shelter animal.",
 	},
 	{
 		id: 18,
 		action:
-			"Encourager un ami ou un proche à atteindre ses objectifs personnels ou professionnels.",
+			"Encourage a friend or loved one to reach their personal or professional goals.",
 	},
 	{
 		id: 19,
-		action: "Écouter attentivement une personne qui a besoin de parler.",
+		action: "Listen attentively to someone who needs to talk.",
 	},
 	{
 		id: 20,
-		action:
-			"Offrir un sourire à un inconnu dans la rue pour égayer sa journée.",
+		action: "Give a smile to a stranger on the street to brighten their day.",
 	},
 	{
 		id: 21,
-		action:
-			"Passer du temps avec un ami ou un membre de la famille qui se sent seul.",
+		action: "Spend time with a friend or family member who feels lonely.",
 	},
 	{
 		id: 22,
 		action:
-			"S'excuser sincèrement quand on fait une erreur, même si c’est difficile.",
+			"Apologize sincerely when making a mistake, even when it's difficult.",
 	},
 	{
 		id: 23,
 		action:
-			"Apporter son aide à une personne qui traverse une période difficile, comme une maladie ou une perte.",
+			"Help someone going through a difficult time, such as illness or loss.",
 	},
 	{
 		id: 24,
 		action:
-			"Prendre soin de soi en faisant des activités qui favorisent son bien-être mental et émotionnel.",
+			"Take care of oneself by doing activities that promote mental and emotional well-being.",
 	},
 ];
 
