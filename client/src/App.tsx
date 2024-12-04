@@ -38,11 +38,15 @@ function App() {
 	return (
 		<>
 			<Header />
-			<MySpinWheel onSpinComplete={handleSpinComplete} />
-			<div className="card-container">
-				<Card title="Action du jour :" content={action} />
-				<Card title="Citation du jour :" content={quote} />
-			</div>
+			<main>
+				<div className="wheel-container">
+					<MySpinWheel onSpinComplete={handleSpinComplete} />
+				</div>
+				<div className="card-container">
+					<Card title="Today's Good Deed :" content={action} />
+					<Card title="Today's Inspiring Quote :" content={quote} />
+				</div>
+			</main>
 			<Footer />
 		</>
 	);
