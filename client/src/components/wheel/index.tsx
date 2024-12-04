@@ -10,7 +10,7 @@ const MySpinWheel = ({
 	const [mustSpin, setMustSpin] = useState(false);
 	const [prizeNumber, setPrizeNumber] = useState(0);
 	const audio = new Audio("./src/assets/sound/roue fortune 2(1).mp3");
-
+  
 	const playSound = () => {
 		audio.volume = 0.2;
 		audio.play();
@@ -51,6 +51,5 @@ const MySpinWheel = ({
 			<Button onButtonClick={handleSpinClick} />
 		</>
 	);
-};
 
 export default MySpinWheel;
