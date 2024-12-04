@@ -42,8 +42,8 @@ function App() {
 			<div className="card-container">
 				<Card title="Action du jour :" content={action} />
 				<Card title="Citation du jour :" content={quote} />
-				<Footer />
 			</div>
+			<Footer />
 		</>
 	);
 }

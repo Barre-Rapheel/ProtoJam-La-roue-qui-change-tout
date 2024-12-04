@@ -9,6 +9,12 @@ const MySpinWheel = ({
 }) => {
 	const [mustSpin, setMustSpin] = useState(false);
 	const [prizeNumber, setPrizeNumber] = useState(0);
+	const audio = new Audio("./src/assets/sound/roue fortune 2(1).mp3");
+
+	const playSound = () => {
+		audio.volume = 0.2;
+		audio.play();
+	};
 
 	const data = [
 		{ option: "🌱🌱🌱", style: { backgroundColor: "#FFC4C6" } },
@@ -20,6 +26,7 @@ const MySpinWheel = ({
 	];
 
 	const handleSpinClick = () => {
+		playSound();
 		const newPrizeNumber = Math.ceil(Math.random() * data.length);
 		setPrizeNumber(newPrizeNumber);
 		setMustSpin(true);
