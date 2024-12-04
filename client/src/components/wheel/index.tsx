@@ -3,12 +3,16 @@ import { Wheel } from "react-custom-roulette";
 import Button from "../Button/Button";
 import "../wheel/App.css";
 
-const MySpinWheel = () => {
+const MySpinWheel = ({
+  onSpinComplete,
+}: {
+  onSpinComplete: (randomId: number) => void;
+}) => {
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
+  const audio = new Audio("./src/assets/sound/roue fortune 2(1).mp3");
 
   const playSound = () => {
-    const audio = new Audio("./src/assets/sound/roue fortune 2(1).mp3");
     audio.volume = 0.2;
     audio.play();
   };
@@ -24,9 +28,13 @@ const MySpinWheel = () => {
 
   const handleSpinClick = () => {
     playSound();
-    const newPrizeNumber = Math.floor(Math.random() * data.length);
+    const newPrizeNumber = Math.ceil(Math.random() * data.length);
     setPrizeNumber(newPrizeNumber);
     setMustSpin(true);
+  };
+  const handleSpinStop = () => {
+    setMustSpin(false);
+    onSpinComplete(prizeNumber);
   };
   return (
     <>
@@ -35,7 +43,7 @@ const MySpinWheel = () => {
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
           data={data}
-          onStopSpinning={() => setMustSpin(false)}
+          onStopSpinning={handleSpinStop}
           outerBorderColor="#260A37"
           outerBorderWidth={2}
           innerBorderColor="#260A37"
