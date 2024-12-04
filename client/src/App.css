@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: calc(100vh - 120px);
-  padding-top: 2rem;
-  text-align: center;
-  background-color: #fefefe;
-}
-
-.main h2 {
-  font-family: var(--titleFont);
-  color: var(--red);
-  font-size: 2.5rem;
-  margin: 0;
-}
-
 :root {
   --titleFont: "Luckiest Guy";
   --textFont: "Open sans", sans-serif;
@@ -32,6 +15,18 @@
   --grey: #dbe2f4;
   --yellow: #fddb00;
   --red: #ff5300;
+}
+
+main {
+  background-color: #fffef8;
+}
+
+.wheel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
 }
 
 .card-container {

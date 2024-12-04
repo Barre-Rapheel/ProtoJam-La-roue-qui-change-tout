@@ -3,7 +3,7 @@ footer {
   color: var(--purple);
   padding: 1rem;
   text-align: center;
-  font-family: var(--textFont);
+  font-family: var(--titleFont);
 }
 
 footer p {

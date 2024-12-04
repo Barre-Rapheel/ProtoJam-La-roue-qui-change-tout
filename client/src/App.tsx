@@ -9,7 +9,9 @@ function App() {
     <>
       <Header />
       <main>
-        <MySpinWheel />
+        <div className="wheel-container">
+          <MySpinWheel />
+        </div>
         <div className="card-container">
           <Card
             title="Bonne action du jour :"
