@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import Button from "../Button/Button";
+import "../wheel/App.css";
 
 const MySpinWheel = () => {
   const [mustSpin, setMustSpin] = useState(false);
@@ -29,7 +30,7 @@ const MySpinWheel = () => {
   };
   return (
     <>
-      <div className="wheel">
+      <div className="wheelContainer">
         <Wheel
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
